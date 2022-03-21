@@ -1,0 +1,150 @@
+.kontGalerija{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  background-image: url(/pozadina.jpg);
+  background-color: rgb(219, 185, 133);
+}
+@media (max-width: 500px) {
+  .kontGalerija{
+    flex-direction: column;
+  }
+}
+.divForma{
+  margin: 5px;
+  padding: 10px;
+}
+.divTabele{
+  margin: 25px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.25);
+  flex-direction: row; 
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.info{
+  padding: 10px;
+  margin: 5px;
+  max-width: 400px;
+
+}
+.btn{
+  font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "Apple Gothic", sans-serif; 
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+@media only screen and  (max-device-width: 600px) {
+  .btn{
+    font-size: 40px;
+  }
+}
+
+.divIzlozba2{
+
+  background-color: #f0abe7;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  
+}
+.divIzlozba{
+
+  background-color: rgba(233, 140, 18, 0.5);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+@media only screen and  (max-device-width: 600px) {
+  .divIzlozba, .divForma, .divTabele, .kontGalerija{
+    flex-direction: column;
+    height: auto;
+    font-size: 50px;
+  }
+  input, select{
+    font-size: 50px;
+  }
+}
+.naslov{
+  color: rgb(40, 12, 66);
+  font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "Apple Gothic", sans-serif; 
+  font-weight: 900;
+}
+
+.labeleGalerija{
+  color:rgb(40, 12, 66);
+  font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "Apple Gothic", sans-serif; 
+  font-size: 100%;
+  font-weight: 600;
+}
+.modal, .modalSlika ,.modalSlikaIzmena{
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+  
+}
+.modal-content,.modal-content-slika, .modal-content-izmena{
+  background-image: url(/slika.jpg);
+  border-radius: 0.5em;
+  max-width: 600px;
+  padding: 2em;
+  margin: auto;
+  display: flex;
+  flex-direction: column; 
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "Apple Gothic", sans-serif;
+}
+
+.close-btn {
+  float: right;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+@media only screen and  (max-device-width: 600px) {
+  .close-btn{
+    font-size: 50px;
+  }
+}
+
+.slika-btn{
+  color: rgb(40, 12, 66);
+  font-weight: 800;
+  font-size: 24px;
+}
+.divSlika{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px solid rgb(40, 12, 66);
+  padding-left: 10px;
+  padding: 2px;
+}
+@media only screen and  (max-device-width: 600px){
+  .divSlika,.divUmetnik{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+  }
+}
+.divUmetnik{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding: 2px;
+}
+.labelaUmetnik{
+  font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "Apple Gothic", sans-serif; 
+  font-weight: bold;
+}
+
+
+
+
+
