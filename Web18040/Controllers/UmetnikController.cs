@@ -34,34 +34,34 @@ namespace Web18040.Controllers
             }
        }
       
-        [Route("IzbrisiUmetnika/{idUmetnika}")]
-        [HttpDelete]
-        public async Task<ActionResult> IzbrisiUmetnika(int idUmetnika)
-        {
-             if (idUmetnika <= 0)
-            {
-                return BadRequest("ID nije validan!");
-            }
-            try
-            {
-                var umetnik = await Context.Umetnici.FindAsync(idUmetnika);
+        // [Route("IzbrisiUmetnika/{idUmetnika}")]
+        // [HttpDelete]
+        // public async Task<ActionResult> IzbrisiUmetnika(int idUmetnika)
+        // {
+        //      if (idUmetnika <= 0)
+        //     {
+        //         return BadRequest("ID nije validan!");
+        //     }
+        //     try
+        //     {
+        //         var umetnik = await Context.Umetnici.FindAsync(idUmetnika);
                
-                if(umetnik != null)
-                {
-                    Context.Umetnici.Remove(umetnik);
-                    await Context.SaveChangesAsync();
-                    return Ok($"Uspešno izbrisan umetnik sa umetnickim imenom: {idUmetnika}");
-                }
-                else{
-                     return BadRequest("Nije ok");
-                }
+        //         if(umetnik != null)
+        //         {
+        //             Context.Umetnici.Remove(umetnik);
+        //             await Context.SaveChangesAsync();
+        //             return Ok($"Uspešno izbrisan umetnik sa umetnickim imenom: {idUmetnika}");
+        //         }
+        //         else{
+        //              return BadRequest("Nije ok");
+        //         }
                 
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         return BadRequest(e.Message);
+        //     }
+        // }
 
         
 

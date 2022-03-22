@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\Web18040\\Web18040.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\WebProjekat\\Web18040\\Web18040.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\Web18040\\Web18040.csproj": {
+    "C:\\Users\\DELL\\Desktop\\WebProjekat\\Web18040\\Web18040.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Web18040\\Web18040.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\WebProjekat\\Web18040\\Web18040.csproj",
         "projectName": "Web18040",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\Web18040\\Web18040.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\WebProjekat\\Web18040\\Web18040.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\Web18040\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\WebProjekat\\Web18040\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

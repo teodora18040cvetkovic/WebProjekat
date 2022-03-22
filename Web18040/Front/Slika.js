@@ -161,7 +161,37 @@ export class Slika{
         let novaVisina = this.miniKont.querySelector(".visina").value;
         let novaSirina = this.miniKont.querySelector(".sirina").value;
 
-        let opEl = document.querySelector(".izmenaTeh");
+        if(noviNaziv==="" || noviNaziv.length > 50)
+        {
+            alert("Unesite naziv slike!");
+            return;
+        }
+        const today = new Date();
+        var n = new Date(noviDatum);
+        if(n >= today)
+        {
+            alert("Datum u buducnosti!");
+            modSlika.style.display = "block";
+            modSlikaC.style.display = "block";
+            return;
+        }
+        if(noviDatum==="")
+        {
+            alert("Unesite datum!");
+            return;
+        }
+        if(novaVisina==="" || novaVisina.value < 50)
+        {
+            alert("Unesite visinu vecu od 50!");
+            return;
+        }
+        if(novaSirina==="" || novaSirina.value < 50)
+        {
+            alert("Unesite sirinu vecu od 50!");
+            return;
+        }
+
+        let opEl = this.miniKont.querySelector(".izmenaTeh");
         var novaTehnika = opEl.options[opEl.selectedIndex].value;
         var tekst = opEl.options[opEl.selectedIndex].name;
         console.log(tekst);
@@ -175,6 +205,8 @@ export class Slika{
                 this.sirina = novaSirina;
                 this.tehnike = tekst;            
                 console.log(this.tehnike);
+                
+                alert("Slika je promenjena!");
                 
                 this.miniKont.querySelector(".nazivSlikeIzmena").innerHTML = this.nazivSlike + "/";
                 this.miniKont.querySelector(".datumKreiranjaIzmena").innerHTML =  this.datumKreiranja + "/";

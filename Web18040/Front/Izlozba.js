@@ -328,9 +328,10 @@ export class Izlozba{
             alert("Unesite sirinu vecu od 50!");
             return;
         }
-        let opEl = document.querySelector("select");
+        let opEl = this.minikont.querySelector("select");
         var tehnikaV = opEl.options[opEl.selectedIndex].value;
         var teTekst = opEl.options[opEl.selectedIndex].name;
+        console.log(teTekst);
         
         console.log(naziv, datumKreiranja, visina, sirina, tehnikaV);
         console.log(this.id);
